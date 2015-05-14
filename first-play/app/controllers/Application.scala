@@ -10,7 +10,7 @@ object Application extends Controller {
   }
 
   def hello(name: String) = Action {
-    Ok("Hello " + name)
+    Ok(views.html.hello(name))
   }
 
   def squareIt(num: Int): Int = {
